@@ -1,0 +1,10 @@
+!^a::
+Gui,Add,Edit,VHensuu
+Gui,Add,Button,,OK
+Gui,Show
+Return
+ButtonOK:
+Enter:
+Gui,Submit
+Msgbox,%Hensuu%
+Return

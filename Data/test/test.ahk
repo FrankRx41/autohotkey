@@ -1,0 +1,35 @@
+Menu,foobar,Add,main(&1),foobar
+Menu,foobar,Add
+Menu,foobar,Add,&auth,foobar/auth
+Menu,foobar,Add,&student,foobar/student
+Menu,foobar,Add,&webdav,foobar/webdav
+Menu,foobar,Add,web&mail,foobar/webmail
+Menu,foobar,Add,Moodle,foobar/Moodle
+Menu,foobar,Add,Hope,foobar/Hope
+
+Menu,foobar,Color,0xFF33FF
+foobar:
+return
+foobar/auth:
+Run, http://auth.fun.ac.jp/.exe
+return
+foobar/student:
+Run, https://student.fun.ac.jp/up/faces/login/Com00501A.jsp
+return
+foobar/webdav:
+Run, https://webdav.fun.ac.jp/proself/login/login.go?AD=init
+return
+foobar/webmail:
+Run, https://webmail.fun.ac.jp/
+return
+foobar/Moodle:
+Run, http://vle.c.fun.ac.jp/moodle/login/index.php
+return
+foobar/Hope:
+Run, http://hope2013.c.fun.ac.jp/
+return
+
+#b::
+	CoordMode, Menu, Screen
+	Menu,foobar,Show,700,500
+return

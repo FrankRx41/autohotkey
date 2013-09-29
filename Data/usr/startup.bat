@@ -1,0 +1,1 @@
+start "AutoHotkey.exe" "%~dp0AutoHotkey.ahk"
